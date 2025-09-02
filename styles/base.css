@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(0, 0, 128);
+    color: #ddd;
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+section {
+    border: 2px solid rgb(0 0 0 / 10%);
+    border-radius: 1rem;
+    margin: 5px;
+    
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;  
+}
+
+
+h1 {
+    font-weight: 700;
+    padding: 1rem;
+    border-bottom: 1px solid #36454f;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+h2 {
+    background-color: navy;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header, main , nav, footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.lili {
+    display: grid;
+    align-items: center;
+}
+
+
+.card1 img {
+    float: right;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 3px;
+    box-shadow: 0 0 30px gray;
+    margin: 15px;
+    /* I added margin here */
+}
+
+.card1 p {
+    padding: 15px 0 15px 15px;
+    /* I changed <p> padding 0px (left and right), 15px (top and bottom)*/
+}
+
+
+
+.card {
+    grid-column: 2/3;
+    margin: 1rem;
+    height: 25rem;
+    width: 20rem;
+    position: relative;
+}
+
+section ul li {
+    justify-items: center;
+    justify-content: center;
+}
+
+.card1 {
+    position: relative;
+    /*width: 20em;
+    margin: 1em;
+    border: 1px solid rgb(0 0 0/0.2);
+    padding: 1em;
+    background-color: #eee;
+    color: #333;
+    text-align: center;*/
+    grid-column: 1/2;   
+}
+
+
+nav {
+    background-color: #36454f;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+footer {
+    background-color: rgb(0, 0, 128);
+    color: #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* larger/wider views **************************/
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    flex: 1 0 auto;
+    /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+    in this example, the items will not shrink but can grow to fill the space at natural content width*/
+
+}
