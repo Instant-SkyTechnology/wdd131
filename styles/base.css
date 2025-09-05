@@ -42,7 +42,7 @@ h2 {
 }
 
 header, main, nav , footer {
-    width: 840px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
