@@ -81,11 +81,13 @@ footer {
     position: relative;
 }
 
-section ul li {
-    justify-items: center;
-    justify-content: center;
+aside ul li {
+    display: block;
+    text-align: inherit;
+    padding: 0.5rem;
+    margin-top: 5px;
 }
-
+    
 .card1 {
     position: relative;
     /*width: 20em;
