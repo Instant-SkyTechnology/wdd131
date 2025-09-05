@@ -74,7 +74,7 @@ header, main, nav , footer {
     grid-column: 2/3;
     margin: 1rem 0;
     height: 25rem;
-    width: 17rem;
+    width: 15rem;
     position: relative;
 }
 
