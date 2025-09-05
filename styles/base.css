@@ -42,7 +42,7 @@ h2 {
 }
 
 header, main, nav , footer {
-    max-width: 800px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
@@ -74,7 +74,7 @@ header, main, nav , footer {
     grid-column: 2/3;
     margin: 1rem 0;
     height: 25rem;
-    width: 15rem;
+    width: 17rem;
     position: relative;
 }
 
@@ -89,7 +89,7 @@ aside ul li {
     position: relative;
     margin: 1rem 0;
     height: 25rem;
-    width: 33rem;
+    width: 34rem;
     grid-column: 1/2;
 }
 
