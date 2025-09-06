@@ -28,8 +28,10 @@ h1 {
     font-weight: 700;
     padding: 1rem;
     border-bottom: 1px solid #36454f;
+    border-top: 1px solid #36454f;
     font-size: 2rem;
     text-align: center;
+    margin-top: 15px;
 }
 
 
@@ -45,6 +47,7 @@ header, main, nav , footer {
     width: 840px;
     margin: 0 auto;
 }
+
 
 .lili {
     display: grid;
