@@ -27,8 +27,8 @@ body {
 h1 {
     font-weight: 700;
     padding: 0.5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.381);
-    border-top: 1px solid rgba(0, 0, 0, 0.381);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.618);
+    border-top: 1px solid rgba(0, 0, 0, 0.618);
     font-size: 2rem;
     text-align: center;
     margin-top: 15px;
