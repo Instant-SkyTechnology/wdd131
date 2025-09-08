@@ -1,6 +1,6 @@
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
-        h1 {
+        h2 {
             text-align: center;
         }
 
@@ -20,7 +20,7 @@
             background-color: rgb(0, 0, 128);
         }
         
-        .navigation p {
+        .navigation h1 {
             grid-column: 1/2;
         }
         
