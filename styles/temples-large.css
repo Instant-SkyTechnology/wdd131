@@ -36,6 +36,10 @@
         nav {
             margin: 0.5rem auto;
         }
+
+        nav .active {
+            color: yellow;
+        }
     
         .tmple {
             display: grid;
