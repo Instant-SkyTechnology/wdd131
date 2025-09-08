@@ -4,14 +4,25 @@
     box-sizing: border-box;
 }
 
+/* h1 {
+    text-align: left;
+    font-family: times, serif;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+} */
+
 .navigation p {
-    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    text-align: right;
+    margin: 1rem;
     font-weight: bold;
 }
 
+
 h1 {
     text-align: center;
-}
+} 
 
 /* small view navigation */
 #menu {
@@ -19,8 +30,8 @@ h1 {
     border: 0;
     background: none;
     color: white;
-    float: right;
-    padding: 6px 7px 0 0;
+    position: absolute;
+    padding: 6px;
 }
 
 #menu::before {
@@ -32,12 +43,14 @@ h1 {
 }
 
 .navigation {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
     background-color:#333;
     color: #fff;
+    padding: 15px;
 }
 
 .navigation a {
