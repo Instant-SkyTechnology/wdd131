@@ -4,12 +4,10 @@
     box-sizing: border-box;
 }
 
-/* h1 {
-    text-align: left;
-    font-family: times, serif;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-} */
+body {
+    font-family: "Ubuntu", 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
 
 .navigation p {
     font-size: 1.2rem;
@@ -17,6 +15,7 @@
     text-align: right;
     margin: 1rem;
     font-weight: bold;
+    font-weight: 700;
 }
 
 
@@ -36,10 +35,12 @@ h1 {
 
 #menu::before {
     content: "☰";
+    cursor: pointer;
 }
 
 #menu.open::before {
     content: "❎";
+    cursor: pointer;
 }
 
 .navigation {
@@ -50,7 +51,7 @@ h1 {
     list-style: none;
     background-color:#333;
     color: #fff;
-    padding: 15px;
+    padding: 10px 0;
 }
 
 .navigation a {
@@ -64,22 +65,12 @@ h1 {
 .navigation a:hover {
     background-color: #bbb;
     color: #333;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
-}
-
-
-.stuff {
-    margin: .5rem;
-    border: 1px solid rgb(0 0 0 / .1);
-    background-color: #bed;
-    max-width: 580px;
-    height: 100vh;
-
 }
 
 

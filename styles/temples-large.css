@@ -9,6 +9,11 @@
             margin: 15px auto;
         }
 
+        body {
+            font-family: "Ubuntu", 'Times New Roman', Times, serif;
+            font-weight: 400;
+        }
+
         .navigation {
             display: grid;
             align-items: center;
@@ -63,10 +68,7 @@
             flex: 1 1 100%;
         }
 
-        .stuff {
-            margin: 0.5rem auto;
-        }
-
+        
         footer {
             background-color: rgb(0, 0, 128);
             color: #ddd;
@@ -76,13 +78,3 @@
 
 }
 
-/* @media screen and (min-width: 500px) {
-    header {
-        background-color: #000;
-        color: #fff;
-    }
-
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-} */
