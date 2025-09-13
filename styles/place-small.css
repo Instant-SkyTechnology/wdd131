@@ -1,0 +1,100 @@
+/* Small screen SVG icon */
+@media (max-width: 600px) {
+    :root {
+        --primary-color: #007b5e;
+        --text-color: #333;
+        --background-color: #f4f4f4;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        color: var(--text-color);
+    }
+
+    header,
+    footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    #lastModified {
+        color: yellow;
+    }
+
+    .weather h2::after {
+        content: "";
+        background-image: url("../images/sun_cloud_icon_1.svg");
+        background-size: 1.5em 1.5em;
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .weather-icon {
+        display: block;
+        background-image: url('../images/sun_cloud_icon_1.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .body {
+        margin: 0;
+        font-family: sans-serif;
+        padding: 1rem;
+        background-color: #f5f5f5;
+    }
+
+    .herodiv {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        /* space between image and sections */
+    }
+
+    /* Image styles */
+    .hero-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+    }
+
+    /* Section styles */
+    section {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .stats h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .stats p {
+        margin: 10px auto;
+    }
+
+    .weather h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .weather p {
+        margin: 10px auto;
+    }
+}
