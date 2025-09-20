@@ -1,0 +1,146 @@
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Ubuntu", 'Times New Roman', Times, serif;
+        font-weight: 400;
+    }
+
+    .navigation h1 {
+        font-size: 1.2rem;
+        color: white;
+        text-align: right;
+        margin: 1rem;
+        font-weight: bold;
+        font-weight: 700;
+    }
+
+
+    h2 {
+        text-align: center;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 15px auto;
+    }
+
+
+    .navigation {
+        display: grid;
+        align-items: center;
+        background-color: rgb(0, 0, 128);
+        flex-direction: row;
+    }
+
+    .navigation h1 {
+        grid-column: 1/2;
+    }
+
+    .navigation nav {
+        grid-column: 2/3;
+    }
+
+    .an-chor {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        margin: 0.5rem auto;
+    }
+
+    nav .active {
+        color: yellow;
+    }
+
+    .tmple {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+
+    footer {
+        background-color: rgb(0, 0, 128);
+        color: #ddd;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    /****************************/
+    /* Container for all cards */
+    .tmple {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+        background-color: #f9f9f9;
+    }
+
+    /* Individual card styling */
+    .tmple section {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Hover effect */
+    .tmple section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Image styling */
+    .tmple section img {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        border-radius: 4px;
+    }
+
+    /* Temple name */
+    .tmple section h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    /* Text styling */
+    .tmple section p {
+        margin: 0.25rem 0;
+        font-size: 0.95rem;
+        color: #444;
+        text-align: center;
+    }
+
+    /* Label styling */
+    .label {
+        font-weight: bold;
+        color: #222;
+    }
+
+
+
+}

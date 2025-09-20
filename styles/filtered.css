@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.navigation h1 {
+    font-size: 1.2rem;
+    color: white;
+    text-align: right;
+    margin: 1rem;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    padding: 6px;
+}
+
+#menu::before {
+    content: "☰";
+    cursor: pointer;
+}
+
+#menu.open::before {
+    content: "❎";
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 400;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+
+/****************************/
+/* Individual card styling */
+.tmple section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Image styling */
+.tmple section img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    /* border-radius: 4px; */
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.573);
+}
+
+/*  */
+footer {
+    background-color: #333;
+    color: #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+#lastModified {
+    color: rgba(255, 255, 0, 0.83);
+    padding: 5px;
+}
