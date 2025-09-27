@@ -1,0 +1,47 @@
+@media screen and (max-width: 500px) {
+    .rating-item label {
+        font-size: 1rem;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+    
+    header,
+    footer {
+        max-width: 840px;
+        margin: 0 auto;
+    }
+    
+    header {
+        color: white;
+        background-color: #4b3035;
+        text-align: center;
+        padding: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    footer {
+        color: white;
+        background-color: #4b3035;
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 15px;
+    }
+    
+    main {
+        text-align: center;
+        height: 70vh;
+    }
+    
+    #lastModified {
+        color: rgba(255, 255, 0, 0.83);
+        padding: 5px;
+    }
+}
