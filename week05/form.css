@@ -1,0 +1,149 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+header  {
+    color: white;
+    background-color: #4b3035;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 15px;
+}
+
+footer {
+    color: white;
+    background-color: #4b3035;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 15px;
+}
+
+form {
+    
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;    
+    background: #dad0d2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.spt { color: #2d69ae;}
+
+fieldset {
+    margin-top: 25px;
+}
+
+label,
+legend {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/*---RADIO BUTTON---*/
+.rating-fieldset {
+    border: none;
+}
+
+.rating-options {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1rem;
+}
+
+.rating-item label {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
+
+.rating-item input[type="radio"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/*------------------------------*/
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 500px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #fefefe;
+    color: #4b3035;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #b3d3b3;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.ital {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@media screen and (max-width: 480px) {
+    .rating-item label {
+        font-size: 1rem;
+    }
+}
+
