@@ -17,16 +17,24 @@
 
 body {
     font-family: var(--body-font);
-    background-color: #f7f7f7;
     margin: 0;
     padding: 20px;
     color: var(--black);
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 header {
     text-align: center;
     margin-bottom: 40px;
 }
+
+footer {
+    text-align: center;
+    border-top: 2px solid var(--cadet-gray);
+}
+
+#lastModified { color: var(--light-orange);}
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -63,4 +71,14 @@ ul {
 
 p, ul {
     margin-top: 15px;
+}
+
+.wireframe-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wireframe-item {
+    margin: 10px auto;  
 }
