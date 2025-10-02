@@ -51,7 +51,7 @@ fieldset {
 label,
 legend {
     display: block;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-weight: bold;
 }
 
@@ -83,6 +83,11 @@ legend {
 input[type="radio"] {
     width: 18px;
     height: 18px;
+}
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    margin-top: -15px;
 }
 
 .rating-item input[type="radio"] {
