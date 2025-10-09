@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is site's season hobby for my website">
+    <meta name="author" content="Steve B KALALA">
+    <title>A Seasonal Shift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/seasons.css">
+    <script src="scripts/seasons.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+            <h1>A Seasonal Shift</h1>
+        </div>
+        <nav id="mobileNav">
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="seasons.html">Seasons</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <main>
+        <section class="seasonal-theme">
+            <h2>Customize Your Seasonal Mood</h2>
+            <label for="seasonSelect">Select your favorite season:</label>
+            <select id="themeSelector">
+            <option value="">-- Choose One --</option>
+            <option value="fall">Fall</option>
+            <option value="winter">Winter</option>
+        </select>
+        <button id="applyBtn">Apply Theme</button>
+        <div id="seasonalMessage" class="season-message"></div>
+    </main>
+    <footer class="foot">
+        <p>&copy;2025 | Transitional Seasons | Steve Buamikusu KALALA</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com"><img src="images/facebook_icon.webp" alt="Facebook-reference for rafting site" width="30"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter_icon.webp" alt="Twitter-reference for rafting site" width="30"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram_icon.webp" alt="Instagram-reference for rafting site" width="30"></a>
+        </nav>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

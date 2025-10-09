@@ -1,0 +1,13 @@
+/* Responsive Design */
+@media (min-width: 600px) {
+    .features {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .feature {
+        flex: 1;
+        margin: 0 0.5rem;
+    }
+
+}
