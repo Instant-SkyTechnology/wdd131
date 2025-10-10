@@ -26,11 +26,14 @@ h2,
 h3 {
     color: #2c3e50;
     margin-bottom: 0.5rem;
+    font-family: var(--heading-font);
+    font-weight: 700;
 }
 
-a {
-    text-decoration: none;
-    color: #0066cc;
+#mobileNav a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-weight: bold;
 }
 
 /* ========== Header & Navigation ========== */
@@ -117,6 +120,7 @@ main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 1rem;
+    
 }
 
 /* Intro section */
@@ -134,14 +138,16 @@ main {
 .gallery-intro p {
     font-size: 1.1rem;
     color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
 
 /* Gallery grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Exactly 3 columns */
     gap: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 }
 
 /* Responsive: Stack on smaller screens */
@@ -164,8 +170,12 @@ main {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.396);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+hr {
+    margin-bottom: 40px;
 }
 
 .gallery-grid figure:hover {
@@ -194,10 +204,11 @@ footer {
     background-color: var(--cadet-gray);
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
     font-size: 0.9rem;
     color: #2c3e50;
     border-top: 8px solid #ddd;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
 }
 
 .foot {
