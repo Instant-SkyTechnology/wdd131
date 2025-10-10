@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is site's season hobby for my website">
+    <meta name="author" content="Steve B KALALA">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+    
+<body>
+    <header>
+        <div class="header-container">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+            <h1>Contact Us</h1>
+        </div>
+        <nav id="mobileNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="seasons.html">Seasons</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <form method="get" action="submitted.html">
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                <div class="form-itm column22">
+                    <label for="lname">Name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+                <div class="form-itm column22">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Ask Us About</legend>
+                <div class="fm-item column11">
+                    <input type="radio" id="inquiry" name="radiobutton" value="General Inquiry" required>
+                    <label for="inquiry">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="radiobutton" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="website" name="radiobutton" value="Website Suggestion">
+                    <label for="website">Website Suggestion</label>
+                </div><br>
+                <label for="message">Write your message here:</label>
+                <textarea name="message" id="message" rows="4"></textarea><br>
+                <div class="fm-item column11">
+                    <input type="checkbox" id="news" name="news">
+                    <label for="news">Please subscribe me to the monthly newsletter</label>
+                </div>
+            </fieldset>
+            <div class="x-buton">
+                <button type="submit" value="Contact Us">Submit Form</button>
+            </div>
+        </form>
+    </main>
+    <footer class="foot">
+        <p>&copy;2025 | Transitional Seasons | Steve Buamikusu KALALA</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com"><img src="images/facebook_icon.webp"
+                    alt="Facebook-reference for rafting site" width="30"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter_icon.webp" alt="Twitter-reference for rafting site"
+                    width="30"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram_icon.webp"
+                    alt="Instagram-reference for rafting site" width="30"></a>
+        </nav>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

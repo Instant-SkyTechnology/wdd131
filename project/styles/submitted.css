@@ -110,38 +110,25 @@ header {
     }
 }
 
-/* ========== Main Content ========== */
+/*==== Main Content ====*/
+
+
 main {
-    max-width: 840px;
-    margin: 2rem auto;
-    padding: 1rem;
-}
-
-.intro {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.features {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+    margin-bottom: -15px;
 }
 
-.feature {
-    background: #fff;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
 
 /* ========== Footer ========== */
 footer {
     background-color: var(--cadet-gray);
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
     font-size: 0.9rem;
     color: #2c3e50;
     border-top: 8px solid #ddd;

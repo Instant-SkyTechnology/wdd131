@@ -13,3 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Get existing count, or default to 0
+    let submitCount = parseInt(localStorage.getItem("submitCount")) || 0;
+
+    // Increment the count
+    submitCount++;
+
+    // Save back to localStorage
+    localStorage.setItem("submitCount", submitCount);
+
+});
