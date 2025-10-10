@@ -26,11 +26,14 @@ h2,
 h3 {
     color: #2c3e50;
     margin-bottom: 0.5rem;
+    font-family: var(--heading-font);
+    font-weight: 700;
 }
 
-a {
-    text-decoration: none;
-    color: #0066cc;
+#mobileNav a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-weight: bold;
 }
 
 /* ========== Header & Navigation ========== */
@@ -132,6 +135,8 @@ footer {
     font-size: 0.9rem;
     color: #2c3e50;
     border-top: 8px solid #ddd;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
 }
 
 .foot {
