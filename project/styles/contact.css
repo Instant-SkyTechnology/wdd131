@@ -122,7 +122,7 @@ header {
 /*==== Main Content ====*/
 
 main {
-    max-width: 485px;
+    max-width: 475px;
     margin: 0 auto 20px;
     display: flex;
     flex-direction: column;
@@ -280,25 +280,28 @@ label[for="message"] {
 }
 
 /* ====== Form Responsiveness ====== */
-@media (max-width: 600px) {
-    h2 {
-            font-size: 1.3rem;
-            margin-top: 1rem;
-        }
 
-    /* Stack form fields vertically */
+@media (max-width: 600px) {
     .form-itm.column22 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 2.5fr;
+        column-gap: 0.75rem;
     }
 
     label {
-        text-align: left;
-        padding-right: 0;
-        padding-bottom: 0.25rem;
+        text-align: right;
+        padding-right: 0.5rem;
     }
 
-    fieldset {
-        padding: 0.75rem;
+    input,
+    select,
+    textarea {
+        font-size: 1rem;
+    }
+
+    form {
+        width: 95%;
+        margin: 1rem auto;
+        padding: 1rem;
     }
 
     .x-buton {
@@ -308,12 +311,6 @@ label[for="message"] {
     .x-buton button {
         width: 100%;
         max-width: 280px;
-    }
-
-    form {
-        width: 95%;
-        margin: 1rem auto;
-        padding: 1rem;
     }
 }
 
