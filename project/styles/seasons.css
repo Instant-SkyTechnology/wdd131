@@ -119,7 +119,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    height: 75vh; /* Full viewport height */
+    height: 80vh; /* Full viewport height */
     justify-content: center; /* Horizontal center */
     align-items: center; /* Vertical center */
 }
@@ -140,6 +140,17 @@ main {
 
 #bt button:hover {
     background-color: rgb(100, 168, 100);
+}
+
+.seasonal-theme {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#bt {
+    margin-top: 15px;
 }
 
 /* ========== Footer ========== */
@@ -178,3 +189,34 @@ footer {
     color: var(--moonstone);
     font-weight: bold;
 }
+
+/* === Footer Responsiveness === */
+@media (max-width: 600px) {
+    .foot {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .foot nav {
+        justify-self: center;
+        margin-top: 0.5rem;
+    }
+
+    .socialmedia a {
+        margin: 0 0.5rem;
+    }
+}
+
+/* ====== Mobile Responsiveness ====== */
+@media (max-width: 600px) {
+
+    p {
+        width: 95%;
+        margin: .5rem auto;
+        flex-wrap: nowrap;
+        text-align: center;
+
+    }
+}
+

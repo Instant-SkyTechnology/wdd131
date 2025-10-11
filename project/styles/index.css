@@ -186,4 +186,21 @@ footer {
     font-weight: bold;
 }
 
+/* === Footer Responsiveness === */
+@media (max-width: 600px) {
+    .foot {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .foot nav {
+        justify-self: center;
+        margin-top: 0.5rem;
+    }
+
+    .socialmedia a {
+        margin: 0 0.5rem;
+    }
+}
 

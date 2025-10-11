@@ -164,6 +164,24 @@ footer {
     font-weight: bold;
 }
 
+/* === Footer Responsiveness === */
+@media (max-width: 600px) {
+    .foot {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .foot nav {
+        justify-self: center;
+        margin-top: 0.5rem;
+    }
+
+    .socialmedia a {
+        margin: 0 0.5rem;
+    }
+}
+
 /*========== Form ==========*/
 
 form {
@@ -258,6 +276,43 @@ input[type="radio"] {
 
 label[for="message"] {
     text-align: left;
+}
+
+/* ====== Mobile Responsiveness ====== */
+@media (max-width: 600px) {
+
+    /* Stack form fields vertically on small screens */
+    .form-itm.column22 {
+        grid-template-columns: 1fr;
+    }
+
+    label {
+        text-align: left;
+        padding-right: 0;
+        padding-bottom: 0.25rem;
+    }
+
+    .x-buton {
+        display: flex;
+        justify-content: center;
+    }
+
+    .x-buton button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    form {
+        width: 95%;
+        margin: .5rem auto;
+
+    }
+    footer {
+        margin-top: 15px;
+    }
+    header {
+        margin-bottom: 25px;
+    }
 }
 
 /*=====================================*/
