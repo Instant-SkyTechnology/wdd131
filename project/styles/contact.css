@@ -122,12 +122,10 @@ header {
 /*==== Main Content ====*/
 
 main {
-    padding: 1rem;
-    max-width: 475px;
-    margin: 0 auto;
+    max-width: 485px;
+    margin: 0 auto 20px;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
 }
 
 /* ========== Footer ========== */
