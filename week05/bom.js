@@ -1,3 +1,32 @@
+const list = document.querySelector("ul");
+const input = document.querySelector("input");
+const button = document.querySelector("button");
+
+button.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const myItem = input.value;
+    input.value = "";
+
+    const listItem = document.createElement("li");
+    const listText = document.createElement("span");
+    const listBtn = document.createElement("button");
+
+    listItem.appendChild(listText);
+    listText.textContent = myItem;
+    listItem.appendChild(listBtn);
+    listBtn.textContent = '❌'; //listBtn.textContent = "delete";
+    list.appendChild(listItem);
+
+    listBtn.addEventListener("click", () => {
+        list.removeChild(listItem);
+    });
+
+    input.focus();
+});
+
+
+
 // const input = document.querySelector('#favchap');
 // const button = document.querySelector('button');
 // const list = document.querySelector('#list'); // you need to fill in the blank to reference the HTML element that is a unordered list element.
@@ -50,32 +79,3 @@
 
 
 
-
-
-
-const list = document.querySelector("ul");
-const input = document.querySelector("input");
-const button = document.querySelector("button");
-
-button.addEventListener("click", (event) => {
-    event.preventDefault();
-
-    const myItem = input.value;
-    input.value = "";
-
-    const listItem = document.createElement("li");
-    const listText = document.createElement("span");
-    const listBtn = document.createElement("button");
-
-    listItem.appendChild(listText);
-    listText.textContent = myItem;
-    listItem.appendChild(listBtn);
-    listBtn.textContent = '❌'; //listBtn.textContent = "delete";
-    list.appendChild(listItem);
-
-    listBtn.addEventListener("click", () => {
-        list.removeChild(listItem);
-    });
-
-    input.focus();
-});
